@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="AspNetDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AspNetDBConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.AspNetDBConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="choices1TableAdapter" GeneratorDataComponentClassName="choices1TableAdapter" Name="choices1" UserDataComponentName="choices1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AspNetDBConnectionString (Web.config)" DbObjectName="AspNetDB.dbo.choices1" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        choices1.name, COUNT(*) AS cnt
+FROM            form_answers INNER JOIN
+                         choices1 ON form_answers.choise1 = choices1.id
+GROUP BY choices1.name</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="cnt" DataSetColumn="cnt" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="choices2TableAdapter" GeneratorDataComponentClassName="choices2TableAdapter" Name="choices2" UserDataComponentName="choices2TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AspNetDBConnectionString (Web.config)" DbObjectName="AspNetDB.dbo.choices2" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        choices2.name, COUNT(*) AS cnt
+FROM            form_answers INNER JOIN
+                         choices2 ON form_answers.choise2 = choices2.Id
+GROUP BY choices2.name</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="cnt" DataSetColumn="cnt" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="choices3TableAdapter" GeneratorDataComponentClassName="choices3TableAdapter" Name="choices3" UserDataComponentName="choices3TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AspNetDBConnectionString (Web.config)" DbObjectName="AspNetDB.dbo.choices3" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        choices3.name, COUNT(*) AS cnt
+FROM            form_answers INNER JOIN
+                         choices3 ON form_answers.choise3 = choices3.Id
+GROUP BY choices3.name</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="cnt" DataSetColumn="cnt" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="choices4TableAdapter" GeneratorDataComponentClassName="choices4TableAdapter" Name="choices4" UserDataComponentName="choices4TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AspNetDBConnectionString (Web.config)" DbObjectName="AspNetDB.dbo.choices4" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        choices4.name, COUNT(*) AS cnt
+FROM            form_answers INNER JOIN
+                         choices4 ON form_answers.choise4 = choices4.Id
+GROUP BY choices4.name</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="cnt" DataSetColumn="cnt" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="choices5TableAdapter" GeneratorDataComponentClassName="choices5TableAdapter" Name="choices5" UserDataComponentName="choices5TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AspNetDBConnectionString (Web.config)" DbObjectName="AspNetDB.dbo.choices5" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        choices5.name, COUNT(*) AS cnt
+FROM            form_answers INNER JOIN
+                         choices5 ON form_answers.id = choices5.Id
+GROUP BY choices5.name</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="cnt" DataSetColumn="cnt" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="choices1" msprop:Generator_TableClassName="choices1DataTable" msprop:Generator_TableVarName="tablechoices1" msprop:Generator_TablePropName="choices1" msprop:Generator_RowDeletingName="choices1RowDeleting" msprop:Generator_RowChangingName="choices1RowChanging" msprop:Generator_RowEvHandlerName="choices1RowChangeEventHandler" msprop:Generator_RowDeletedName="choices1RowDeleted" msprop:Generator_UserTableName="choices1" msprop:Generator_RowChangedName="choices1RowChanged" msprop:Generator_RowEvArgName="choices1RowChangeEvent" msprop:Generator_RowClassName="choices1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cnt" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columncnt" msprop:Generator_ColumnPropNameInRow="cnt" msprop:Generator_ColumnPropNameInTable="cntColumn" msprop:Generator_UserColumnName="cnt" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="choices2" msprop:Generator_TableClassName="choices2DataTable" msprop:Generator_TableVarName="tablechoices2" msprop:Generator_TablePropName="choices2" msprop:Generator_RowDeletingName="choices2RowDeleting" msprop:Generator_RowChangingName="choices2RowChanging" msprop:Generator_RowEvHandlerName="choices2RowChangeEventHandler" msprop:Generator_RowDeletedName="choices2RowDeleted" msprop:Generator_UserTableName="choices2" msprop:Generator_RowChangedName="choices2RowChanged" msprop:Generator_RowEvArgName="choices2RowChangeEvent" msprop:Generator_RowClassName="choices2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cnt" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columncnt" msprop:Generator_ColumnPropNameInRow="cnt" msprop:Generator_ColumnPropNameInTable="cntColumn" msprop:Generator_UserColumnName="cnt" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="choices3" msprop:Generator_TableClassName="choices3DataTable" msprop:Generator_TableVarName="tablechoices3" msprop:Generator_TablePropName="choices3" msprop:Generator_RowDeletingName="choices3RowDeleting" msprop:Generator_RowChangingName="choices3RowChanging" msprop:Generator_RowEvHandlerName="choices3RowChangeEventHandler" msprop:Generator_RowDeletedName="choices3RowDeleted" msprop:Generator_UserTableName="choices3" msprop:Generator_RowChangedName="choices3RowChanged" msprop:Generator_RowEvArgName="choices3RowChangeEvent" msprop:Generator_RowClassName="choices3Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cnt" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columncnt" msprop:Generator_ColumnPropNameInRow="cnt" msprop:Generator_ColumnPropNameInTable="cntColumn" msprop:Generator_UserColumnName="cnt" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="choices4" msprop:Generator_TableClassName="choices4DataTable" msprop:Generator_TableVarName="tablechoices4" msprop:Generator_TablePropName="choices4" msprop:Generator_RowDeletingName="choices4RowDeleting" msprop:Generator_RowChangingName="choices4RowChanging" msprop:Generator_RowEvHandlerName="choices4RowChangeEventHandler" msprop:Generator_RowDeletedName="choices4RowDeleted" msprop:Generator_UserTableName="choices4" msprop:Generator_RowChangedName="choices4RowChanged" msprop:Generator_RowEvArgName="choices4RowChangeEvent" msprop:Generator_RowClassName="choices4Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cnt" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columncnt" msprop:Generator_ColumnPropNameInRow="cnt" msprop:Generator_ColumnPropNameInTable="cntColumn" msprop:Generator_UserColumnName="cnt" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="choices5" msprop:Generator_TableClassName="choices5DataTable" msprop:Generator_TableVarName="tablechoices5" msprop:Generator_TablePropName="choices5" msprop:Generator_RowDeletingName="choices5RowDeleting" msprop:Generator_RowChangingName="choices5RowChanging" msprop:Generator_RowEvHandlerName="choices5RowChangeEventHandler" msprop:Generator_RowDeletedName="choices5RowDeleted" msprop:Generator_UserTableName="choices5" msprop:Generator_RowChangedName="choices5RowChanged" msprop:Generator_RowEvArgName="choices5RowChangeEvent" msprop:Generator_RowClassName="choices5Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cnt" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columncnt" msprop:Generator_ColumnPropNameInRow="cnt" msprop:Generator_ColumnPropNameInTable="cntColumn" msprop:Generator_UserColumnName="cnt" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
