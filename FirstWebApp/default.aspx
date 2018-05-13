@@ -1,4 +1,6 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="FirstWebApp._default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="FirstWebApp._default" 
+
+    %>
 
 <!DOCTYPE html>
 
@@ -56,6 +58,36 @@
                 </tr>
             </table>
         </div>
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="HeroesID" DataSourceID="SqlDataSource1" EmptyDataText="There are no data records to display.">
+            <Columns>
+                <asp:BoundField DataField="HeroesID" HeaderText="HeroesID" ReadOnly="True" SortExpression="HeroesID" />
+                <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
+                <asp:BoundField DataField="BirthDate" HeaderText="BirthDate" SortExpression="BirthDate" />
+                <asp:BoundField DataField="Money" HeaderText="Money" SortExpression="Money" />
+                <asp:BoundField DataField="Class" HeaderText="Class" SortExpression="Class" />
+                <asp:BoundField DataField="Race" HeaderText="Race" SortExpression="Race" />
+            </Columns>
+        </asp:GridView>
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:SomeDBConnectionString1 %>" DeleteCommand="DELETE FROM [Heroes] WHERE [HeroesID] = @HeroesID" InsertCommand="INSERT INTO [Heroes] ([Name], [BirthDate], [Money], [Class], [Race]) VALUES (@Name, @BirthDate, @Money, @Class, @Race)" ProviderName="<%$ ConnectionStrings:SomeDBConnectionString1.ProviderName %>" SelectCommand="SELECT [HeroesID], [Name], [BirthDate], [Money], [Class], [Race] FROM [Heroes]" UpdateCommand="UPDATE [Heroes] SET [Name] = @Name, [BirthDate] = @BirthDate, [Money] = @Money, [Class] = @Class, [Race] = @Race WHERE [HeroesID] = @HeroesID">
+            <DeleteParameters>
+                <asp:Parameter Name="HeroesID" Type="Int32" />
+            </DeleteParameters>
+            <InsertParameters>
+                <asp:Parameter Name="Name" Type="String" />
+                <asp:Parameter Name="BirthDate" Type="String" />
+                <asp:Parameter Name="Money" Type="Int32" />
+                <asp:Parameter Name="Class" Type="String" />
+                <asp:Parameter Name="Race" Type="String" />
+            </InsertParameters>
+            <UpdateParameters>
+                <asp:Parameter Name="Name" Type="String" />
+                <asp:Parameter Name="BirthDate" Type="String" />
+                <asp:Parameter Name="Money" Type="Int32" />
+                <asp:Parameter Name="Class" Type="String" />
+                <asp:Parameter Name="Race" Type="String" />
+                <asp:Parameter Name="HeroesID" Type="Int32" />
+            </UpdateParameters>
+        </asp:SqlDataSource>
     </form>
 </body>
 </html>
